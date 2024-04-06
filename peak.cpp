@@ -23,13 +23,13 @@ int findPeak(std::vector<int> input_vector, int range_start, int range_end, int 
 	input_vector:	Contains input values.
 
 	range_start:	The lower index of the range to be tested. Starts at 0, the first element.
- 					Narrows as search progresses
+ 			Narrows as search progresses
 
-	range_end:		The higher index of range to be tested. Starts at n-1, the last element.
- 					Narrows as search progresses
+	range_end:	The higher index of range to be tested. Starts at n-1, the last element.
+ 			Narrows as search progresses
 
-	midpoint:		The halfway point in our range. Determine if peak is to the left or
-					right, then narrow our search range from there. 	
+	midpoint:	The halfway point in our range. Determine if peak is to the left or
+			right, then narrow our search range from there. 	
 */
 
 	// Check if the midpoint is greater than the next number
@@ -60,8 +60,8 @@ int findPeak(std::vector<int> input_vector, int range_start, int range_end, int 
 int main() {
 
 	std::vector<int> input_vector;	// Vector to be filled with input, then searched for peak.
-	std::ifstream input_stream;		// Stream object for reading input file.
-	int input_value;				// Current input element.
+	std::ifstream input_stream;	// Stream object for reading input file.
+	int input_value;		// Current input element.
 
 	// Output error message if input.txt not found.
 	input_stream.open("input.txt");
@@ -78,9 +78,9 @@ int main() {
 	// Close stream object.
 	input_stream.close();
 
-	int n = size(input_vector);			// Size of the range to be searched.
+	int n = size(input_vector);		// Size of the range to be searched.
 	int midpoint = floor((n - 1) / 2);	// The middle of range to be searched, which is half the size of the vector.
-	int peak = 0;						// The index of the highest value in the input vector - this is our output.
+	int peak = 0;				// The index of the highest value in the input vector - this is our output.
 
 	// Edge cases: check if array is size 1 or if the peak is first or last element.
 
