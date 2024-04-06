@@ -34,13 +34,13 @@ Compare this current number to it's neighbors. There are 3 outcomes from this te
     12, 17, 15   
     The current number, 17, is higher than both it's neighbors. We've found the peak  
                 
-2)	Peak is to the left of current number  
+2) Peak is to the left of current number  
     15, 13, 5  
     The current number is higher than the next number, but lower than the previous number.
     So we've passed the peak. Which means it's in the left half of the search range.
     Eliminate the right half and repeat the process until it's found.	
 
-3)	Peak is to the right of the current number  
+3) Peak is to the right of the current number  
     2, 5, 12   
     The current number is lower than the next number. We haven't reached the peak yet.
     So eliminate the left half of the search range - we know the peak isn't there.
