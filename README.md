@@ -1,8 +1,6 @@
 # algorithms_divide_and_conquer
 
 Divide and Conquer - Find Peak  
-Asher Ferguson  
-Last updated: 4/6/24  
 
 ## DESCRIPTION  
 
