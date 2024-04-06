@@ -46,5 +46,5 @@ Compare this current number to it's neighbors. There are 3 outcomes from this te
 5)	Peak is to the right of the current number  
     2, 5, 12   
     The current number is lower than the next number. We haven't reached the peak yet.
-    So eliminate the left half of the vector from the search range - we know the peak isn't there.
+    So eliminate the left half of the search range - we know the peak isn't there.
     Repeat the process until it's found.
